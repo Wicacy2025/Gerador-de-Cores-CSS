@@ -1,0 +1,98 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSStyle - Gerador de Gradientes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">CSSStyle</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="gradient-generator">
+            <h1>Gerador de Gradientes</h1>
+            <div class="gradient-preview" id="gradientPreview"></div>
+            <div class="controls">
+                <div class="color-inputs">
+                    <div class="color-input">
+                        <label for="color1">Cor 1:</label>
+                        <input type="color" id="color1" value="#4158D0">
+                    </div>
+                    <div class="color-input">
+                        <label for="color2">Cor 2:</label>
+                        <input type="color" id="color2" value="#C850C0">
+                    </div>
+                </div>
+                <div class="direction-control">
+                    <label for="direction">Direção:</label>
+                    <select id="direction">
+                        <option value="to right">Para direita</option>
+                        <option value="to left">Para esquerda</option>
+                        <option value="to bottom" selected>Para baixo</option>
+                        <option value="to top">Para cima</option>
+                        <option value="to bottom right">Para baixo-direita</option>
+                        <option value="to bottom left">Para baixo-esquerda</option>
+                        <option value="to top right">Para cima-direita</option>
+                        <option value="to top left">Para cima-esquerda</option>
+                    </select>
+                </div>
+                <button id="generateBtn">Gerar Novo Gradiente</button>
+                <div class="code-display">
+                    <code id="gradientCode">background: linear-gradient(to bottom, #4158D0, #C850C0);</code>
+                    <button id="copyBtn" title="Copiar código">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section">
+            <h2>Sobre o CSSStyle</h2>
+            <div class="about-content">
+                <p>O CSSStyle é uma ferramenta gratuita para desenvolvedores web e designers criarem gradientes CSS bonitos e funcionais com facilidade.</p>
+                <p>Nosso gerador de gradientes permite que você personalize cores e direções, gerando automaticamente o código CSS necessário para implementar em seus projetos.</p>
+                <p>Use nossa ferramenta para explorar novas combinações de cores e adicionar profundidade aos seus designs web!</p>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <h2>Contato</h2>
+            <div class="contact-content">
+                <p>Tem sugestões ou precisa de ajuda? Entre em contato conosco:</p>
+                    <div class="contact-method">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/cssstyle</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fab fa-twitter"></i>
+                        <span>@cssstyle</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 CSSStyle - Gerador de Gradientes. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
